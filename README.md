@@ -1,4 +1,3 @@
-
 # Finding the Best Value for K
 
 ## Introduction
@@ -18,7 +17,7 @@ By now, you've got a strong understanding of how the K-Nearest Neighbors algorit
 
 In general, the smaller K is, the tighter the "fit" of the model. Remember that with supervised learning, you want to fit a model to the data as closely as possible without **_overfitting_** to patterns in the training set that don't generalize.  This can happen if your model pays too much attention to every little detail and makes a very complex decision boundary. Conversely, if your model is overly simplistic, then you may have **_underfit_** the model, limiting its potential. A visual explanation helps demonstrate this concept in practice:
 
-<img src="images/fit_fs.png" width = "700">
+<img src="https://curriculum-content.s3.amazonaws.com/data-science/images/fit_fs.png" width = "700">
 
 When K is small, any given prediction only takes into account a very small number of points around it to make the prediction. If K is too small, this can end up with a decision boundary that looks like the overfit picture on the right. 
 
@@ -26,7 +25,7 @@ Conversely, as K grows larger, it takes into account more and more points, that 
 
 It's important to try to find the best value for K by iterating over a multiple values and comparing performance at each step. 
 
-<img src='images/best_k_fs.png' width = "550">
+<img src='https://curriculum-content.s3.amazonaws.com/data-science/images/best_k_fs.png' width = "550">
 
 As you can see from the image above, `k=1` and `k=3` will provide different results! 
 
@@ -41,7 +40,7 @@ The best way to find an optimal value for K is to choose a minimum and maximum b
 3. Calculate and evaluate a performance metric using the predictions the model made 
 4. Compare the results for every model and find the one with the lowest overall error, or highest overall score!
 
-<img src='images/plot_fs.png' width="550">
+<img src='https://curriculum-content.s3.amazonaws.com/data-science/images/plot_fs.png' width="550">
 
 A common way to find the best value for K at a glance is to plot the error for each value of K. Find the value for K where the error is lowest. If this graph continued into higher values of K, we would likely see the error numbers go back up as K increased. 
 
